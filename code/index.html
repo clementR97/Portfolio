@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CR Porfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <h3>CR Portfolio</h3>
+            <button class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#Apropos">A propos</a></li>
+            <li><a href="#competences">Competences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="pageCV.html" id="CV" class="cv-btn">
+            <iconify-icon icon="mdi:file-document"></iconify-icon>
+            CV
+        </a>
+
+        <button id="theme-toggle" class="theme-btn">
+            <iconify-icon icon="mdi:weather-sunny"></iconify-icon>
+            Light
+        </button>
+    </nav>
+    <div id="presentation">
+        <div class="cercle" id="rouge"></div>
+        <div class="cercle" id="violet"></div>
+        <div class="cercle" id="jaune"></div>
+        <div class="cercle" id="rose"></div>
+
+        <div id="translucide">
+            <h2 id="developpeur"> Développeur</h2>
+            <h2>Full Stack</h2>
+            <div id="text-translucide">
+                <span>Je transforme vos idées en applications web modernes et performantes.
+                Spécialisé en React+vite, Nodejs(Express), MongoDB MERN.</span>
+            </div>
+        </div>
+        <span id="txtScroll">Scroll pour découvrir mon univers <div id="fleche">⬇</div> </span>
+    </div>
+    <!-- a propos -->
+    <div id="Apropos">
+       <h2>A propos</h2>
+       <div id="Partie-text">
+        <div class="text-presentationPhoto">
+            <p>
+                Passionné par le développement web , je crée des applications 
+                modernes qui allient performance technique et expérience utilisateur 
+                exceptionnelle.</br></br>
+
+                Spécialisé dans l'écosystème JavaScript, 
+                j'accompagne les entreprises dans leur transformation digitale avec 
+                des solutions sur mesure.</p>
+        </div>
+       <div class="text-presentationPhoto">
+                <div id="cerclePhoto"></div>
+                <h1 style="font-size: 34px;"> Clément Roland</h1></br>
+                <span style="font-size: 28px;">Développeur Web full stack</span>
+                
+       </div>
+       </div>
+       
+    </div>
+    <!-- partie compétences -->
+    <div id="competences">
+             <h2>Compétences</h2>
+                <div id="compe">
+             <div class="compeFrontBack" id="front-end">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+                    <path fill="none" stroke="#fff" stroke-linecap="square" stroke-width="2" d="M5.536 15.536L2 12l3.536-3.536m12.928 7.072L22 12l-3.536-3.536M14 4l-4 16"/>
+                </svg>
+                <h2>Front-end</h2>
+                    <span style="font-size: 17px; margin-top: 30px;">Interfaces modernes
+                        et réactives</span>
+                        <span style="font-size: 24px; margin-top: 30px;">
+                            React</br>
+                            Javascript</br>
+                            Material UI</br>
+                            Tailwind css</br>
+                            bootstrap css
+                        </span>
+             </div>
+
+             <div class="compeFrontBack" id="back-end">
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7c0 2.21-4.03 4-9 4S3 9.21 3 7m18 0c0-2.21-4.03-4-9-4S3 4.79 3 7m18 0v5M3 7v5m18 0c0 2.21-4.03 4-9 4s-9-1.79-9-4m18 0v5c0 2.21-4.03 4-9 4s-9-1.79-9-4v-5"/>
+                </svg>
+                <h2>Back-end</h2>
+                    <span style="font-size: 17px; margin-top: 30px;">APIs robustes et scalables</span>
+                        <span style="font-size: 24px; margin-top: 30px;">
+                            NodeJS</br>
+                            Express</br>
+                            MongoDb</br>
+                            Mysql</br>
+                        </span>
+             </div>
+                </div>
+             
+    </div>
+
+    <div id="projets">
+        <h2>Projets</h2>
+        <div id="vitrine">
+            <!-- contenue1 -->
+            <div class="contenue">
+                <div class="image-contenue" id="img_saas">
+                    
+                </div>
+
+                <div class="text-contenue">
+                    <h2>Saas Location de voiture</h2>
+                    <p>Un SaaS moderne qui simplifie la location de voitures, de la réservation à la gestion complète.</p>
+                </div>
+                <div class="techno-contenue">
+                    <div class="techno-oval"><span>angular</span></div>
+                    <div class="techno-oval"><span>nodeJs</span></div>
+                    <div class="techno-oval"><span>mongodb</span></div>
+                    <div class="techno-oval"><span>supabase</span></div>
+                </div>
+                 <div class="git-contenue">
+                     <a href="https://github.com/clementR97/frontendCarRent" target="_blank" class="git-oval">
+                         <span style="margin-right: 10px; margin-left: 20px;">Code</span>
+                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                             <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                         </svg>
+                     </a>
+                 </div>
+            </div>
+
+            <!-- contenue2 -->
+            <div class="contenue">
+                <div class="image-contenue" id="img_angular"></div>
+
+                <div class="text-contenue">
+                    <h2>SnapFace</h2>
+                    <p>mini copie d'Instagram</p>
+                </div>
+                <div class="techno-contenue">
+                    <div class="techno-oval"><span>angular</span></div>
+                    <div class="techno-oval"><span>nodeJs</span></div>
+                    <div class="techno-oval"><span>mongodb</span></div>
+                    
+                </div>
+                 <div class="git-contenue">
+                     <a href="https://github.com/clementR97/angular" target="_blank" class="git-oval">
+                         <span style="margin-right: 10px; margin-left: 20px;">Code</span>
+                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                             <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                         </svg>
+                     </a>
+                 </div>
+            </div>
+
+            <!-- contenue3 -->
+            <div class="contenue">
+                <div class="image-contenue" id="img_nodeJs"></div>
+
+                <div class="text-contenue">
+                    <h2>Ebay</h2>
+                    <p>mettre en ligne des petites annonces entre particulier.</p>
+                </div>
+                <div class="techno-contenue">
+                    <div class="techno-oval"><span>angular</span></div>
+                    <div class="techno-oval"><span>nodeJs</span></div>
+                    <div class="techno-oval"><span>mongodb</span></div>
+                    
+                </div>
+                 <div class="git-contenue">
+                     <a href="https://github.com/clementR97/Ebay" target="_blank" class="git-oval">
+                         <span style="margin-right: 10px; margin-left: 20px;">Code</span>
+                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                             <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                         </svg>
+                     </a>
+                 </div>
+            </div>
+
+            <!-- contenue4 -->
+            <div class="contenue">
+                <div class="image-contenue" id="img_Mplayer"></div>
+
+                <div class="text-contenue">
+                    <h2>M player</h2>
+                    <p>un projet de fin d'étude full stack lecteur de musique dans le cloud.</p>
+                </div>
+                <div class="techno-contenue">
+                    <div class="techno-oval"><span>html</span></div>
+                    <div class="techno-oval"><span>css</span></div>
+                    <div class="techno-oval"><span>php</span></div>
+                    <!-- <div class="techno-oval"><span>supabase</span></div> -->
+                </div>
+                 <div class="git-contenue">
+                     <a href="https://github.com/clementR97/M-Player" target="_blank" class="git-oval">
+                         <span style="margin-right: 10px; margin-left: 20px;">Code</span>
+                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                             <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                         </svg>
+                     </a>
+                 </div>
+            </div>
+        </div>
+    </div>
+<div id="contact">
+    <!-- <h2 style="margin-bottom: 70px;">Contact</h2> -->
+    <div id="formulaire-contact">
+        <div class="cercle" id="rouge2"></div>
+        <div class="cercle" id="violet2"></div>
+        <div class="cercle" id="jaune2"></div>
+        <div class="cercle" id="rose2"></div>
+
+        <div id="translucide2">
+            
+            <div id="contact-left">
+                <h2>Travaillons ensemble</h2>
+                <p>Vous avez un projet en tête ? N'hésitez pas à me contacter pour discuter de vos besoins et voir comment je peux vous aider.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <iconify-icon icon="mdi:email" style="font-size: 24px; margin-right: 15px;"></iconify-icon>
+                        <span>clementroland52@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <iconify-icon icon="mdi:phone" style="font-size: 24px; margin-right: 15px;"></iconify-icon>
+                        <span>+590 6 90 96 77 63</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="contact-right">
+                <form id="contact-form">
+                    <div class="form-group">
+                        
+                        <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                    </div>
+                    <div class="form-group">
+                        
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        
+                        <input type="text" id="sujet" name="sujet" placeholder="Sujet" required>
+                    </div>
+                    <div class="form-group">
+                        
+                        <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <iconify-icon icon="mdi:send" style="margin-right: 8px;"></iconify-icon>
+                        Envoyer
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        // Gestion du menu burger
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        
+        menuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+        
+        // Fermer le menu quand on clique sur un lien
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+        
+        // Gestion du thème
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        let isDarkMode = true; // Mode sombre par défaut
+
+        // Fonction pour changer le thème
+        function toggleTheme() {
+            isDarkMode = !isDarkMode;
+            
+            if (isDarkMode) {
+                body.removeAttribute('data-theme');
+                themeToggle.innerHTML = '<iconify-icon icon="mdi:weather-sunny"></iconify-icon> Light';
+            } else {
+                body.setAttribute('data-theme', 'light');
+                themeToggle.innerHTML = '<iconify-icon icon="mdi:weather-night"></iconify-icon> Dark';
+            }
+            
+            // Sauvegarder la préférence
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        }
+
+        // Charger la préférence sauvegardée
+        function loadTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') {
+                isDarkMode = false;
+                body.setAttribute('data-theme', 'light');
+                themeToggle.innerHTML = '<iconify-icon icon="mdi:weather-night"></iconify-icon> Dark';
+            } else {
+                isDarkMode = true;
+                body.removeAttribute('data-theme');
+                themeToggle.innerHTML = '<iconify-icon icon="mdi:weather-sunny"></iconify-icon> Light';
+            }
+        }
+
+        // Initialiser le thème au chargement
+        loadTheme();
+
+        // Event listener pour le bouton
+        themeToggle.addEventListener('click', toggleTheme);
+
+        // Configuration EmailJS
+        (function() {
+            emailjs.init("YOUR_PUBLIC_KEY"); // Remplacez par votre clé publique EmailJS
+        })();
+
+        // Gestion du formulaire de contact
+        const contactForm = document.getElementById('contact-form');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Récupérer les données du formulaire
+            const formData = {
+                nom: document.getElementById('nom').value,
+                email: document.getElementById('email').value,
+                sujet: document.getElementById('sujet').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Validation côté client
+            if (!formData.nom || !formData.email || !formData.sujet || !formData.message) {
+                alert('Veuillez remplir tous les champs');
+                return;
+            }
+            
+            // Validation email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(formData.email)) {
+                alert('Veuillez entrer une adresse email valide');
+                return;
+            }
+            
+            // Afficher un message de chargement
+            const submitBtn = contactForm.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<iconify-icon icon="mdi:loading" style="margin-right: 8px;"></iconify-icon> Envoi en cours...';
+            submitBtn.disabled = true;
+            
+            // Envoyer l'email via EmailJS
+            emailjs.send('service_k6uml2r', 'template_v4wct8f', formData)
+                .then(function(response) {
+                    // Succès
+                    submitBtn.innerHTML = '<iconify-icon icon="mdi:check" style="margin-right: 8px;"></iconify-icon> Envoyé !';
+                    submitBtn.style.backgroundColor = '#28a745';
+                    
+                    // Réinitialiser le formulaire
+                    contactForm.reset();
+                    
+                    // Remettre le bouton normal après 3 secondes
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.style.backgroundColor = '#ff0000';
+                        submitBtn.disabled = false;
+                    }, 3000);
+                    
+                    console.log('Email envoyé avec succès!', response.status, response.text);
+                }, function(error) {
+                    // Erreur
+                    submitBtn.innerHTML = '<iconify-icon icon="mdi:alert" style="margin-right: 8px;"></iconify-icon> Erreur';
+                    submitBtn.style.backgroundColor = '#dc3545';
+                    
+                    // Remettre le bouton normal après 3 secondes
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.style.backgroundColor = '#ff0000';
+                        submitBtn.disabled = false;
+                    }, 3000);
+                    
+                    console.log('Erreur lors de l\'envoi:', error);
+                });
+        });
+
+        // Effet de scroll pour les cartes
+        window.addEventListener('scroll', function() {
+            const apropos = document.getElementById('Apropos');
+            const competences = document.getElementById('competences');
+            const projets = document.getElementById('projets');
+            const contact = document.getElementById('contact');
+            const windowHeight = window.innerHeight;
+            
+            // Animation pour Apropos
+            const aproposPosition = apropos.getBoundingClientRect().top;
+            if (aproposPosition < windowHeight - 100) {
+                apropos.classList.add('visible');
+            }
+            
+            // Animation pour Competences
+            const competencesPosition = competences.getBoundingClientRect().top;
+            if (competencesPosition < windowHeight - 300) {
+                competences.classList.add('visible');
+            }
+            
+            // Animation pour Projets
+            const projetsPosition = projets.getBoundingClientRect().top;
+            if (projetsPosition < windowHeight - 300) {
+                projets.classList.add('visible');
+            }
+            
+            // Animation pour Contact
+            const contactPosition = contact.getBoundingClientRect().top;
+            if (contactPosition < windowHeight - 400) {
+                contact.classList.add('visible');
+            }
+        });
+    </script>
+</body>
+</html>

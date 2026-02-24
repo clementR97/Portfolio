@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Développeur Web & Mobile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background: white;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20mm;
+            font-size: 11px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 18px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .name {
+            font-size: 22px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 4px;
+        }
+        
+        .title {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .contact-info {
+            font-size: 10px;
+            color: #555;
+        }
+        
+        .contact-info span {
+            margin: 0 8px;
+        }
+        
+        .section {
+            margin-bottom: 16px;
+        }
+        
+        .section-title {
+            font-size: 13px;
+            font-weight: bold;
+            color: #2c3e50;
+            text-transform: uppercase;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 3px;
+            margin-bottom: 8px;
+        }
+        
+        .profile-text {
+            font-size: 11px;
+            text-align: justify;
+            line-height: 1.4;
+        }
+        
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 12px;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            font-size: 12px;
+            color: #2c3e50;
+        }
+        
+        .date {
+            font-size: 10px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .company {
+            font-size: 11px;
+            color: #34495e;
+            margin-bottom: 4px;
+        }
+        
+        .description {
+            font-size: 10px;
+            color: #555;
+            margin-left: 15px;
+        }
+        
+        .description li {
+            margin-bottom: 1px;
+        }
+        
+        .skills-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .skill-category h3 {
+            font-size: 11px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 4px;
+        }
+        
+        .skill-list {
+            font-size: 10px;
+            color: #555;
+            line-height: 1.3;
+        }
+        
+        .project-tech {
+            font-size: 9px;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 2px;
+        }
+        
+        .languages {
+            font-size: 10px;
+            color: #555;
+        }
+        
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        @media print {
+            body {
+                margin: 0;
+                padding: 15mm;
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">CLÉMENT ROLAND</div>
+        <div class="title">Développeur Web & Mobile Fullstack</div>
+        <div class="contact-info">
+            <span>Email: clementroland52@gmail.com</span>
+            <span>06 90 96 77 63</span>
+            <span>France</span>
+            <span><strong>Portfolio : https://clementr97.github.io/clement-portfolio/</strong></span>
+            <span>linkedin.com/in/roland-971</span>
+            <span>github.com/clementR97</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Profil</div>
+        <div class="profile-text">
+            Développeur fullstack Angular | Node.js | MongoDB orienté résultats. En 1 an : 4 applications déployées, stack moderne maîtrisée, autonomie projet complète. Ma force : transformer rapidement des idées en applications fonctionnelles. Portfolio complet avec démos live sur https://clementr97.github.io/clement-portfolio/. Prêt à contribuer immédiatement à vos projets techniques.
+        </div>
+    </div>
+
+    <div class="two-columns">
+        <div>
+            <div class="section">
+                <div class="section-title">Expérience</div>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="job-title">Chargé de Projet - Développeur</div>
+                        <div class="date">2024 (1 mois)</div>
+                    </div>
+                    <div class="company">TPE - Secteur événementiel</div>
+                    <ul class="description">
+                        <li>Application de réservation événements (Angular/Node.js/MongoDB)</li>
+                        <li>Architecture technique fullstack en autonomie complète</li>
+                        <li>Gestion projet de la conception au déploiement</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Formation</div>
+                <div class="education-item">
+                    <div class="item-header">
+                        <div class="job-title">Formation Développeur Web & Mobile</div>
+                        <div class="date">2024</div>
+                    </div>
+                    <div class="company">Spécialisation : Angular, Node.js, MongoDB</div>
+                </div>
+                <div class="education-item">
+                    <div class="item-header">
+                        <div class="job-title">BTS Systèmes Numériques</div>
+                        <div class="date">2019</div>
+                    </div>
+                    <div class="company">Option Informatique et Réseaux</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Compétences</div>
+                <div class="skills-section">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-list">
+                            Angular, TypeScript, JavaScript, HTML5, CSS3
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-list">
+                            Node.js, Express.js, PHP, API REST
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-section" style="margin-top: 8px;">
+                    <div class="skill-category">
+                        <h3>Bases de données</h3>
+                        <div class="skill-list">
+                            MongoDB, MySQL, Supabase
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Outils</h3>
+                        <div class="skill-list">
+                            Git, VS Code, Figma, Cloudinary
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="section">
+                <div class="section-title">Projets Réalisés</div>
+                
+                <div class="project-item">
+                    <div class="item-header">
+                        <div class="job-title">SaaS Location de Voitures</div>
+                        <div class="date">2025</div>
+                    </div>
+                    <div class="description">
+                        Plateforme complète : interfaces client/admin, réservations, paiements. code dans le portfolio.
+                    </div>
+                    <div class="project-tech">Angular, Node.js, MongoDB, Supabase</div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="item-header">
+                        <div class="job-title">E-commerce (Clone Leboncoin)</div>
+                        <div class="date">2025</div>
+                    </div>
+                    <div class="description">
+                        Marketplace avec annonces, recherche avancée, messagerie intégrée.
+                    </div>
+                    <div class="project-tech">Angular, Node.js, Express</div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="item-header">
+                        <div class="job-title">SnapFace - Galerie Photos</div>
+                        <div class="date">2025</div>
+                    </div>
+                    <div class="description">
+                        Upload d'images, affichage dynamique, système likes/commentaires.
+                    </div>
+                    <div class="project-tech">Angular, Cloudinary</div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="item-header">
+                        <div class="job-title">M-Player - Lecteur Musical</div>
+                        <div class="date">2024</div>
+                    </div>
+                    <div class="description">
+                        Lecteur en ligne, playlists personnalisées, contrôles avancés.
+                    </div>
+                    <div class="project-tech">HTML5, CSS3, PHP, MySQL</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Langues & Présence</div>
+                <div class="languages">
+                    <strong>Français :</strong> Langue maternelle • <strong>Anglais :</strong> Technique<br>
+                    <strong>GitHub :</strong> Projets open source actifs • <strong>Freelance :</strong> Malt, Codeur.com
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

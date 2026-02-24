@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Clément Roland</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+</head>
+<body>
+    <div id="cv-page">
+        <!-- Cercles colorés -->
+        <div class="cercle" id="rouge3"></div>
+        <div class="cercle" id="violet3"></div>
+        <div class="cercle" id="jaune3"></div>
+        <div class="cercle" id="rose3"></div>
+
+        <!-- Contenu principal -->
+        <div id="translucide3">
+            <h1>Curriculum Vitae</h1>
+            <p>Choisissez la version de votre CV</p>
+            
+            <div class="cv-buttons">
+                <a href="../CV/CV_Clement_FR_COMpre.html" class="cv-download-btn" target="_blank">
+                    <iconify-icon icon="mdi:file-document"></iconify-icon>
+                    <span>CV Français</span>
+                    <small>Version française</small>
+                </a>
+                
+                <a href="../CV/CV_Clement_EN_COMpre.html" class="cv-download-btn" target="_blank">
+                    <iconify-icon icon="mdi:file-document"></iconify-icon>
+                    <span>CV English</span>
+                    <small>English version</small>
+                </a>
+            </div>
+            
+            <div class="back-home">
+                <a href="index.html" class="back-btn">
+                    <iconify-icon icon="mdi:arrow-left"></iconify-icon>
+                    Retour au portfolio
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Animation des cercles
+        document.addEventListener('DOMContentLoaded', function() {
+            const cercles = document.querySelectorAll('.cercle');
+            
+            cercles.forEach((cercle, index) => {
+                setTimeout(() => {
+                    cercle.style.opacity = '1';
+                    cercle.style.transform = 'scale(1)';
+                }, index * 200);
+            });
+        });
+
+        // Animation du contenu
+        setTimeout(() => {
+            const translucide = document.getElementById('translucide3');
+            translucide.style.opacity = '1';
+            translucide.style.transform = 'translateY(0)';
+        }, 800);
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://votre-domaine.com/sitemap.xml
+
+# Optimisations SEO
+Crawl-delay: 1
+
+# Interdire l'indexation des fichiers sensibles
+Disallow: /CV/
+Disallow: /.env
+Disallow: /node_modules/
+Disallow: /package.json
+Disallow: /package-lock.json
