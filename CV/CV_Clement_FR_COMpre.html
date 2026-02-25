@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Développeur Web & Mobile</title>
+    <title>CV - Développeur Web Full-Stack MERN</title>
     <style>
         * {
             margin: 0;
@@ -69,7 +69,7 @@
         .profile-text {
             font-size: 11px;
             text-align: justify;
-            line-height: 1.4;
+            line-height: 1.5;
         }
         
         .experience-item, .education-item, .project-item {
@@ -137,6 +137,24 @@
             margin-top: 2px;
         }
         
+        .project-description {
+            font-size: 10px;
+            color: #555;
+            line-height: 1.3;
+            margin-top: 2px;
+        }
+        
+        .project-badge {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 1px 5px;
+            border-radius: 3px;
+            font-size: 8px;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+        
         .languages {
             font-size: 10px;
             color: #555;
@@ -160,9 +178,9 @@
 <body>
     <div class="header">
         <div class="name">CLÉMENT ROLAND</div>
-        <div class="title">Développeur Web & Mobile Fullstack</div>
+        <div class="title">Développeur Full-Stack MERN • TypeScript</div>
         <div class="contact-info">
-            <span>Email: clementroland52@gmail.com</span>
+            <span>clementroland52@gmail.com</span>
             <span>06 90 96 77 63</span>
             <span>France</span>
             <span><strong>Portfolio : https://clementr97.github.io/clement-portfolio/</strong></span>
@@ -174,7 +192,7 @@
     <div class="section">
         <div class="section-title">Profil</div>
         <div class="profile-text">
-            Développeur fullstack Angular | Node.js | MongoDB orienté résultats. En 1 an : 4 applications déployées, stack moderne maîtrisée, autonomie projet complète. Ma force : transformer rapidement des idées en applications fonctionnelles. Portfolio complet avec démos live sur https://clementr97.github.io/clement-portfolio/. Prêt à contribuer immédiatement à vos projets techniques.
+            Développeur fullstack MERN (MongoDB, Express, React, Node.js) + TypeScript. 3 applications fullstack déployées en production avec authentification JWT, graphiques temps réel et APIs REST. Compétences : Material-UI, Chart.js, déploiement Vercel/Railway/MongoDB Atlas. Portfolio avec démos live : https://clementr97.github.io/clement-portfolio/
         </div>
     </div>
 
@@ -184,14 +202,14 @@
                 <div class="section-title">Expérience</div>
                 <div class="experience-item">
                     <div class="item-header">
-                        <div class="job-title">Chargé de Projet - Développeur</div>
-                        <div class="date">2024 (1 mois)</div>
+                        <div class="job-title">Développeur Full-Stack</div>
+                        <div class="date">2024</div>
                     </div>
-                    <div class="company">TPE - Secteur événementiel</div>
+                    <div class="company">Projet Professionnel - Secteur événementiel</div>
                     <ul class="description">
-                        <li>Application de réservation événements (Angular/Node.js/MongoDB)</li>
-                        <li>Architecture technique fullstack en autonomie complète</li>
-                        <li>Gestion projet de la conception au déploiement</li>
+                        <li>Application de réservation événements complète</li>
+                        <li>Architecture fullstack : Frontend, Backend, Base de données</li>
+                        <li>Gestion projet de la conception au déploiement en autonomie</li>
                     </ul>
                 </div>
             </div>
@@ -203,7 +221,7 @@
                         <div class="job-title">Formation Développeur Web & Mobile</div>
                         <div class="date">2024</div>
                     </div>
-                    <div class="company">Spécialisation : Angular, Node.js, MongoDB</div>
+                    <div class="company">Spécialisation : MERN Stack (MongoDB, Express, React, Node.js)</div>
                 </div>
                 <div class="education-item">
                     <div class="item-header">
@@ -215,18 +233,18 @@
             </div>
 
             <div class="section">
-                <div class="section-title">Compétences</div>
+                <div class="section-title">Compétences Techniques</div>
                 <div class="skills-section">
                     <div class="skill-category">
                         <h3>Frontend</h3>
                         <div class="skill-list">
-                            Angular, TypeScript, JavaScript, HTML5, CSS3
+                            React, TypeScript, JavaScript, Material-UI, Chart.js, HTML5, CSS3
                         </div>
                     </div>
                     <div class="skill-category">
                         <h3>Backend</h3>
                         <div class="skill-list">
-                            Node.js, Express.js, PHP, API REST
+                            Node.js, Express.js, API REST, JWT, bcrypt
                         </div>
                     </div>
                 </div>
@@ -234,73 +252,87 @@
                     <div class="skill-category">
                         <h3>Bases de données</h3>
                         <div class="skill-list">
-                            MongoDB, MySQL, Supabase
+                            MongoDB, Mongoose, MySQL, Firebase
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h3>Outils</h3>
+                        <h3>DevOps & Outils</h3>
                         <div class="skill-list">
-                            Git, VS Code, Figma, Cloudinary
+                            Git, GitHub, Vercel, Railway, MongoDB Atlas, Postman, VS Code
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Langues</div>
+                <div class="languages">
+                    <strong>Français :</strong> Langue maternelle<br>
+                    <strong>Anglais :</strong> B1 (lu, écrit) - Documentation technique
                 </div>
             </div>
         </div>
 
         <div>
             <div class="section">
-                <div class="section-title">Projets Réalisés</div>
+                <div class="section-title">Projets Full-Stack</div>
                 
                 <div class="project-item">
                     <div class="item-header">
-                        <div class="job-title">SaaS Location de Voitures</div>
-                        <div class="date">2025</div>
+                        <div class="job-title">Budget Tracker<span class="project-badge">DÉPLOYÉ</span></div>
+                        <div class="date">2026</div>
                     </div>
-                    <div class="description">
-                        Plateforme complète : interfaces client/admin, réservations, paiements. code dans le portfolio.
+                    <div class="project-description">
+                        Application de gestion de budget personnel avec authentification JWT sécurisée, CRUD complet, 3 graphiques Chart.js interactifs (camembert, barres, ligne). Isolation multi-utilisateurs, interface Material-UI responsive.
                     </div>
-                    <div class="project-tech">Angular, Node.js, MongoDB, Supabase</div>
+                    <div class="project-tech">React • Node.js • MongoDB • Express • JWT • bcrypt • Chart.js • Material-UI</div>
+                    <div class="project-tech" style="margin-top: 4px;">
+                        <strong>Déploiement :</strong> Frontend Vercel • Backend Railway • Database MongoDB Atlas
+                    </div>
                 </div>
                 
                 <div class="project-item">
                     <div class="item-header">
-                        <div class="job-title">E-commerce (Clone Leboncoin)</div>
-                        <div class="date">2025</div>
+                        <div class="job-title">Crypto Dashboard<span class="project-badge">DÉPLOYÉ</span></div>
+                        <div class="date">2026</div>
                     </div>
-                    <div class="description">
-                        Marketplace avec annonces, recherche avancée, messagerie intégrée.
+                    <div class="project-description">
+                        Dashboard temps réel de 50+ cryptomonnaies via API CoinGecko. Graphiques interactifs (camembert market cap, top gainers/losers), auto-refresh 60s, gestion erreurs réseau robuste, Material-UI responsive.
                     </div>
-                    <div class="project-tech">Angular, Node.js, Express</div>
+                    <div class="project-tech">React • TypeScript • Material-UI • Chart.js • Axios • CoinGecko API</div>
+                    <div class="project-tech" style="margin-top: 4px;">
+                        <strong>Déploiement :</strong> Vercel
+                    </div>
                 </div>
                 
                 <div class="project-item">
                     <div class="item-header">
-                        <div class="job-title">SnapFace - Galerie Photos</div>
-                        <div class="date">2025</div>
+                        <div class="job-title">Système d'Authentification JWT</div>
+                        <div class="date">2026</div>
                     </div>
-                    <div class="description">
-                        Upload d'images, affichage dynamique, système likes/commentaires.
+                    <div class="project-description">
+                        Dashboard sécurisé avec inscription/connexion complète. Hashage bcrypt (10 rounds), routes protégées frontend et backend, middleware d'authentification. Base technique du Budget Tracker.
                     </div>
-                    <div class="project-tech">Angular, Cloudinary</div>
+                    <div class="project-tech">React • Node.js • MongoDB • Express • JWT • bcrypt • Context API</div>
                 </div>
                 
                 <div class="project-item">
                     <div class="item-header">
-                        <div class="job-title">M-Player - Lecteur Musical</div>
-                        <div class="date">2024</div>
+                        <div class="job-title">E-commerce avec API</div>
+                        <div class="date">2025</div>
                     </div>
-                    <div class="description">
-                        Lecteur en ligne, playlists personnalisées, contrôles avancés.
+                    <div class="project-description">
+                        Application e-commerce connectée à une API REST. Catalogue produits avec filtres et recherche, panier d'achat avec gestion d'état, interface responsive.
                     </div>
-                    <div class="project-tech">HTML5, CSS3, PHP, MySQL</div>
+                    <div class="project-tech">React • REST API • State Management • Responsive Design</div>
                 </div>
             </div>
 
             <div class="section">
-                <div class="section-title">Langues & Présence</div>
+                <div class="section-title">Veille Technologique</div>
                 <div class="languages">
-                    <strong>Français :</strong> Langue maternelle • <strong>Anglais :</strong> Technique<br>
-                    <strong>GitHub :</strong> Projets open source actifs • <strong>Freelance :</strong> Malt, Codeur.com
+                    <strong>Actif sur :</strong> GitHub (4 repos publics) • Stack Overflow<br>
+                    <strong>Centres d'intérêt :</strong> TypeScript, Next.js, GraphQL, Testing (Vitest)
                 </div>
             </div>
         </div>
