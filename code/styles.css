@@ -350,7 +350,7 @@ align-items: center;
     height: 200px;
     border: solid;
     border-radius: 50%;
-    background-image: url('/image/profil.jpeg');
+    background-image: url('/image/memogi-pro.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -403,21 +403,24 @@ align-items: center;
     /* border: solid; */
     
 }
-#img_saas{
-    background-image: url('../image/SaaS.png');
-    /* background-repeat: no-repeat;
-    background-size: cover; */
+#img_budgetTracker{
+    background-image: url('../image/Dashboard-Budget.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-#img_angular{
-    background-image: url('../image/SnapFace.png');
-    
+#img_crypto{
+    background-image: url('../image/dashboard-crypto.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-#img_nodeJs{
-    background-image: url('../image/NodejS.png');
+#img_login{
+    background-image: url('../image/login.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-#img_Mplayer{
+/* #img_Mplayer{
     background-image: url('../image/M-Player/page\ musique.png');
-}
+} */
 #projets.visible{
     opacity: 1;
     transform: translateY(0);
@@ -442,18 +445,26 @@ align-items: center;
     margin: 0 20px 20px 40px;
     
 }
+.partie-lien{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
 .text-contenue {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
 }
 .image-contenue{
-    width: 100%;
+    width: auto;
     height: 300px;
-    background-color: gray;
+    /* height: 100px; */
+    /* background-color: white; */
     border-radius: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
 }
 .techno-contenue{
     display: flex;
@@ -471,8 +482,8 @@ align-items: center;
     margin-bottom: 10px;
 }
 .git-contenue{
-    margin-top: 20px;
-    margin-bottom: 5px;
+    /* margin-top: 20px;
+    margin-bottom: 5px; */
 
 }
 .git-oval{
@@ -499,6 +510,32 @@ align-items: center;
     border: solid red 3px;
     border-radius: 20px;
     box-shadow: 0 0 5px 3px red;
+    text-decoration: none;
+    color: var(--bg-color);
+}
+.lien-oval{
+    color: var(--bg-color);
+    width: 100px;
+    height: 30px;
+    background-color: var(--text-color);
+    border-radius: 20px;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.lien-oval svg {
+    color: var(--bg-color) !important;
+    width: 24px !important;
+    height: 24px !important;
+    display: inline-block !important;
+}
+.lien-oval:hover{
+    border: solid #3B11F8 3px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 3px #3B11F8;
     text-decoration: none;
     color: var(--bg-color);
 }
