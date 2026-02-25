@@ -31,15 +31,15 @@
 
 <!-- SEO Meta Tags -->
 <title>Clément Roland - Développeur Full Stack | Portfolio</title>
-<meta name="description" content="Portfolio de Clément Roland, développeur Full Stack spécialisé en Angular, Node.js, JavaScript et TypeScript. Découvrez mes projets et compétences en développement web.">
-<meta name="keywords" content="développeur, full stack, angular, nodejs, javascript, typescript, portfolio, web developer, frontend, backend, clément roland">
+<meta name="description" content="Portfolio de Clément Roland, développeur Full Stack spécialisé en React, Node.js, JavaScript et TypeScript. Découvrez mes projets et compétences en développement web.">
+<meta name="keywords" content="développeur, full stack, react, nodejs, javascript, typescript, portfolio, web developer, frontend, backend, clément roland">
 <meta name="author" content="Clément Roland">
 <meta name="robots" content="index, follow">
 <meta name="language" content="French">
 
 <!-- Open Graph Meta Tags -->
 <meta property="og:title" content="Clément Roland - Développeur Full Stack">
-<meta property="og:description" content="Portfolio de Clément Roland, développeur Full Stack spécialisé en Angular, Node.js, JavaScript et TypeScript.">
+<meta property="og:description" content="Portfolio de Clément Roland, développeur Full Stack (MERN) spécialisé en React, Node.js, JavaScript et TypeScript.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://votre-domaine.com">
 <meta property="og:image" content="https://votre-domaine.com/image/profil.jpeg">
@@ -49,7 +49,7 @@
 <!-- Twitter Card Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Clément Roland - Développeur Full Stack">
-<meta name="twitter:description" content="Portfolio de Clément Roland, développeur Full Stack spécialisé en Angular, Node.js, JavaScript et TypeScript.">
+<meta name="twitter:description" content="Portfolio de Clément Roland, développeur Full Stack spécialisé en React, Node.js, JavaScript et TypeScript.">
 <meta name="twitter:image" content="https://votre-domaine.com/image/profil.jpeg">
 
 <!-- Canonical URL -->
@@ -80,7 +80,7 @@
     "@type": "Person",
     "name": "Clément Roland",
     "jobTitle": "Développeur Full Stack",
-    "description": "Développeur Full Stack spécialisé en Angular, Node.js, JavaScript et TypeScript",
+    "description": "Développeur Full Stack (MERN) spécialisé en React, Node.js, JavaScript et TypeScript",
     "url": "https://votre-domaine.com",
     "image": "https://votre-domaine.com/image/profil.jpeg",
     "sameAs": [
@@ -88,7 +88,7 @@
         "https://linkedin.com/in/clement-roland"
     ],
     "knowsAbout": [
-        "Angular",
+        "React",
         "Node.js", 
         "JavaScript",
         "TypeScript",
@@ -96,12 +96,13 @@
         "MySQL",
         "Express.js",
         "Bootstrap",
-        "Tailwind CSS"
+        "Tailwind CSS",
+        "Material-ui"
     ],
     "hasOccupation": {
         "@type": "Occupation",
-        "name": "Développeur Full Stack",
-        "description": "Développement d'applications web modernes avec Angular et Node.js"
+        "name": "Développeur Full Stack MERN",
+        "description": "Développement d'applications web modernes avec React et Node.js"
     }
 }
 </script>

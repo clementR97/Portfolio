@@ -1,7 +1,7 @@
 {
     "name": "Portfolio Clément Roland - Développeur Full Stack",
     "short_name": "CR Portfolio",
-    "description": "Portfolio de Clément Roland, développeur Full Stack spécialisé en Angular, Node.js, JavaScript et TypeScript",
+    "description": "Portfolio de Clément Roland, développeur Full Stack(MERN) spécialisé en React, Node.js, JavaScript et TypeScript",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#000000",
