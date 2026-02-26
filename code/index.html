@@ -329,7 +329,7 @@
 
         // Configuration EmailJS
         (function() {
-            emailjs.init("YOUR_PUBLIC_KEY"); // Remplacez par votre clé publique EmailJS
+            emailjs.init("2Oiac8AsBdVckGuJ_"); // Remplacez par votre clé publique EmailJS
         })();
 
         // Gestion du formulaire de contact
@@ -366,7 +366,7 @@
             submitBtn.disabled = true;
             
             // Envoyer l'email via EmailJS
-            emailjs.send('service_k6uml2r', 'template_v4wct8f', formData)
+            emailjs.send('service_ddi5j5e', 'template_v4wct8f', formData)
                 .then(function(response) {
                     // Succès
                     submitBtn.innerHTML = '<iconify-icon icon="mdi:check" style="margin-right: 8px;"></iconify-icon> Envoyé !';
