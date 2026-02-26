@@ -1244,7 +1244,7 @@ input{
         
     } 
     #txtScroll{
-        bottom: 100px;
+        bottom: 10px;
         left: 40px;
         position: absolute;
     }
