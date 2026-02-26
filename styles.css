@@ -404,17 +404,17 @@ align-items: center;
     
 }
 #img_budgetTracker{
-    background-image: url('../image/Dashboard-Budget.png');
+    background-image: url('./image/Dashboard-Budget.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 #img_crypto{
-    background-image: url('../image/dashboard-crypto.png');
+    background-image: url('./image/dashboard-crypto.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
 #img_login{
-    background-image: url('../image/login.png');
+    background-image: url('./image/login.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
