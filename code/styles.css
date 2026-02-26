@@ -481,11 +481,11 @@ align-items: center;
     border-radius: 20px;
     margin-bottom: 10px;
 }
-.git-contenue{
-    /* margin-top: 20px;
-    margin-bottom: 5px; */
+/* .git-contenue{
+    margin-top: 20px;
+    margin-bottom: 5px;
 
-}
+} */
 .git-oval{
     color: var(--bg-color);
     width: 100px;

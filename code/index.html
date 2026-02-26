@@ -243,8 +243,10 @@
             <div id="contact-right">
                 <form id="contact-form">
                     <div class="form-group">
-                        
-                        <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                        <!-- Anti-spam honeypot -->
+<!-- <input type="text" name="company" id="company" autocomplete="off" tabindex="-1" style="display:none"> -->
+
+                        <input type="text" id="nom" name="name" placeholder="Nom" required>
                     </div>
                     <div class="form-group">
                         
@@ -285,7 +287,9 @@
                 menuToggle.classList.remove('active');
             });
         });
-        
+
+// let formLoadedAt = Date.now();
+      
         // Gestion du thème
         const themeToggle = document.getElementById('theme-toggle');
         const body = document.body;
@@ -331,6 +335,23 @@
         (function() {
             emailjs.init("2Oiac8AsBdVckGuJ_"); // Remplacez par votre clé publique EmailJS
         })();
+// Anti-spam honeypot
+// const honeypot = document.getElementById('company');
+// if (honeypot.value !== '') {
+//     console.warn('Spam détecté');
+//     return;
+// }
+// const timeSpent = (Date.now() - formLoadedAt) / 1000;
+// if (timeSpent < 3) {
+//     alert("Action trop rapide, veuillez réessayer.");
+//     return;
+// }
+// const lastSend = localStorage.getItem('lastSend');
+// if (lastSend && Date.now() - lastSend < 60000) {
+//     alert("Veuillez attendre 1 minute avant de renvoyer un message.");
+//     return;
+// }
+
 
         // Gestion du formulaire de contact
         const contactForm = document.getElementById('contact-form');
@@ -374,6 +395,7 @@
                     
                     // Réinitialiser le formulaire
                     contactForm.reset();
+ //localStorage.setItem('lastSend', Date.now());
                     
                     // Remettre le bouton normal après 3 secondes
                     setTimeout(() => {
