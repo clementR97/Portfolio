@@ -403,6 +403,11 @@ align-items: center;
     /* border: solid; */
     
 }
+#img_KaruFood{
+    background-image: url('./image/KaruFood_Accueil1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #img_budgetTracker{
     background-image: url('./image/Dashboard-Budget.png');
     background-repeat: no-repeat;
