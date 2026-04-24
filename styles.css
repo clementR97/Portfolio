@@ -413,13 +413,13 @@ align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#img_crypto{
-    background-image: url('./image/dashboard-crypto.png');
+#img_karuzen{
+    background-image: url('./image/karuzen.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
-#img_login{
-    background-image: url('./image/login.png');
+#img_eliteCute{
+    background-image: url('./image/eliteCute.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
