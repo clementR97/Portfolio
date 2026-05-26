@@ -407,21 +407,31 @@ align-items: center;
     background-image: url('./image/KaruFood_Accueil1.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 #img_budgetTracker{
     background-image: url('./image/Dashboard-Budget.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 #img_karuzen{
     background-image: url('./image/karuzen.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
 }
 #img_eliteCute{
     background-image: url('./image/eliteCute.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+}
+#img_e-commerce{
+    background-image: url('./image/e-commerce.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 /* #img_Mplayer{
     background-image: url('../image/M-Player/page\ musique.png');
@@ -430,25 +440,172 @@ align-items: center;
     opacity: 1;
     transform: translateY(0);
 }
-#vitrine{
+#carousel-wrapper{
     width: 100%;
-    height:auto;
-    display: flex;
-    /* border: solid var(--border-color); */
-    flex-wrap: wrap;
-    padding: 0 10px;
-    display: flex;
-    justify-content: center;
-}
-.contenue{
-    width: 300px;
-    height: 500px;
-    border: solid var(--border-color);
-    border-radius: 20px;
+    max-width: 1300px;
+    position: relative;
     display: flex;
     flex-direction: column;
-    margin: 0 20px 20px 40px;
-    
+    align-items: center;
+    justify-content: center;
+    padding: 60px 80px;
+    box-sizing: border-box;
+}
+#vitrine-viewport{
+    width: 100%;
+    max-width: 1150px;
+    height: 750px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: solid var(--border-color);
+    position: relative;
+}
+#vitrine{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+}
+.contenue{
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+}
+.image-contenue{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    z-index: 0;
+}
+.contenue-overlay{
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    background-color: rgba(40, 40, 40, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 22px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+.contenue-overlay .text-contenue{
+    margin: 0;
+}
+.contenue-overlay .text-contenue h2{
+    font-size: 24px;
+    margin: 0 0 6px 0;
+    color: #ffffff;
+}
+.contenue-overlay .text-contenue p{
+    font-size: 15px;
+    margin: 0;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.9);
+}
+.contenue-overlay .techno-contenue{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-start;
+}
+.contenue-overlay .techno-oval{
+    min-width: auto;
+    padding: 4px 14px;
+    height: auto;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    font-size: 13px;
+    margin: 0;
+}
+.contenue-overlay .partie-lien{
+    margin: 0;
+    justify-content: flex-start;
+    gap: 12px;
+}
+.contenue-overlay .git-oval,
+.contenue-overlay .lien-oval{
+    margin-left: 0;
+}
+.carousel-btn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    z-index: 10;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+.carousel-btn:hover:not(:disabled){
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+    border-color: red;
+}
+.carousel-btn:disabled{
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+.carousel-prev{
+    top: 5px;
+}
+.carousel-next{
+    bottom: 5px;
+}
+#carousel-dots{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 5;
+}
+.carousel-dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+.carousel-dot.active{
+    background-color: red;
+    border-color: red;
+    transform: scale(1.2);
+    box-shadow: 0 0 8px red;
+}
+.carousel-dot:hover{
+    background-color: var(--text-color);
 }
 .partie-lien{
     display: flex;
@@ -461,15 +618,6 @@ align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
-}
-.image-contenue{
-    width: auto;
-    height: 300px;
-    /* height: 100px; */
-    /* background-color: white; */
-    border-radius: 20px;
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
 }
 .techno-contenue{
     display: flex;
@@ -784,14 +932,11 @@ input{
     }
 
     /* Projets */
-    #vitrine {
-        padding: 0 2rem;
-        gap: 1.5rem;
+    #carousel-wrapper {
+        padding: 50px 60px;
     }
-
-    .contenue {
-        width: 280px;
-        margin: 0 0 20px 0;
+    #vitrine-viewport {
+        height: 680px;
     }
 
     /* A propos & Compétences */
@@ -874,10 +1019,17 @@ input{
         left: 8rem;
     }
     
-    .contenue {
-        width: 280px;
-        height: 450px;
-        margin: 0 20px 20px 20px;
+    #carousel-wrapper {
+        padding: 50px 40px;
+    }
+    #vitrine-viewport {
+        height: 600px;
+    }
+    .contenue-overlay {
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        padding: 18px 22px;
     }
     
     /* Réduction des textes pour l'élément translucide */
@@ -1093,25 +1245,65 @@ input{
     
     /* Section Projets */
     #projets {
-        padding: 2rem;
+        padding: 2rem 0;
+    }
+    
+    #carousel-wrapper {
+        padding: 50px 15px;
+        max-width: 100%;
+    }
+    
+    #vitrine-viewport {
+        height: 550px;
+        max-width: 100%;
     }
     
     #vitrine {
         flex-direction: column;
-        align-items: center;
-        gap: 2rem;
     }
     
     .contenue {
         width: 100%;
-        max-width: 350px;
-        height: auto;
-        padding: 1rem;
-        margin: 0 0 20px 0;
+        height: 100%;
+        padding: 0;
+        margin: 0;
     }
     
-    .image-contenue {
-        height: 200px;
+    .contenue-overlay {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        padding: 14px 16px;
+        gap: 8px;
+    }
+    
+    .contenue-overlay .text-contenue h2 {
+        font-size: 20px;
+    }
+    
+    .contenue-overlay .text-contenue p {
+        font-size: 13px;
+    }
+    
+    .contenue-overlay .techno-oval {
+        font-size: 12px;
+        padding: 3px 10px;
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.4rem;
+    }
+    
+    #carousel-dots {
+        right: 12px;
+        gap: 10px;
+    }
+    
+    .carousel-dot {
+        width: 10px;
+        height: 10px;
     }
     
     /* Section Contact */
@@ -1192,9 +1384,21 @@ input{
         height: 120px;
     }
     
-    .contenue {
-        max-width: 300px;
-        margin: 0 0 15px 0;
+    #vitrine-viewport {
+        height: 500px;
+    }
+    
+    .contenue-overlay {
+        padding: 12px 14px;
+        gap: 6px;
+    }
+    
+    .contenue-overlay .text-contenue h2 {
+        font-size: 18px;
+    }
+    
+    .contenue-overlay .text-contenue p {
+        font-size: 12px;
     }
     
     .techno-oval {

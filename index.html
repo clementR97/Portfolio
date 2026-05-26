@@ -49,7 +49,7 @@
             <h2>Full Stack</h2>
             <div id="text-translucide">
                 <span>Je transforme vos idées en applications web modernes et performantes.
-                Spécialisé en React+vite, Nodejs(Express), MongoDB MERN NextJS & TypeScript.</span>
+                Spécialisé en React+vite, Nodejs(Express), MongoDB MERN NextJS, TypeScript & WordPress CMS.</span>
             </div>
         </div>
         <span id="txtScroll">Scroll pour découvrir mon univers <div id="fleche">⬇</div> </span>
@@ -64,14 +64,14 @@
                 modernes qui allient performance technique et expérience utilisateur 
                 exceptionnelle.</br></br>
 
-                Spécialisé dans l'écosystème JavaScript & TypeScript, 
+                Spécialisé dans l'écosystème JavaScript, TypeScript & WordPress CMS, 
                 j'accompagne les entreprises dans leur transformation digitale avec 
                 des solutions sur mesure.</p>
         </div>
        <div class="text-presentationPhoto">
                 <div id="cerclePhoto"></div>
                 <h1 style="font-size: 34px;"> Clément Roland</h1></br>
-                <span style="font-size: 28px;">Développeur Web full stack MERN NextJS & TypeScript</span>
+                <span style="font-size: 28px;">Développeur Web full stack MERN NextJS, TypeScript & WordPress CMS</span>
                 
        </div>
        </div>
@@ -96,7 +96,8 @@
                             TypeScritp</br>
                             Material UI</br>
                             Tailwind css</br>
-                            bootstrap css
+                            bootstrap css</br>
+                            WordPress CMS
                         </span>
              </div>
 
@@ -121,126 +122,152 @@
 
     <div id="projets">
         <h2>Projets</h2>
-        <div id="vitrine">
-            <!-- contenue1 -->
-            <div class="contenue">
-                <div class="image-contenue" id="img_KaruFood">
-                    
-                </div>
-
-                <div class="text-contenue">
-                    <h2>KaruFood</h2>
-                    <p>Application NextJS/typeScript de commande de restaurant partie client et partie admin.<br/>id:admin@karufoods.com  <br/> mdp: votre_mot_de_passe_admin</p>
-                </div>
-                <div class="techno-contenue">
-                    <div class="techno-oval"><span>NextJS</span></div>
-                    <div class="techno-oval"><span>TypeScript</span></div>
-                    <div class="techno-oval"><span>mongodb Atlas</span></div>
-                    <div class="techno-oval"><span>Vercel</span></div>
-                    
-                </div>
-
-                  <div class="partie-lien">
-                        <div class="git-contenue">
-                            <a href="https://github.com/clementR97/carte_restaurant" target="_blank" class="git-oval">
-                                <span style="margin-right: 10px; margin-left: 20px;">Code</span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                </svg>
-                            </a>
+        <div id="carousel-wrapper">
+            <button class="carousel-btn carousel-prev" id="carousel-prev" aria-label="Projet précédent">
+                <iconify-icon icon="mdi:chevron-up"></iconify-icon>
+            </button>
+            <div id="vitrine-viewport">
+                <div id="vitrine">
+                    <!-- contenue1 -->
+                    <div class="contenue">
+                        <div class="image-contenue" id="img_KaruFood"></div>
+                        <div class="contenue-overlay">
+                            <div class="text-contenue">
+                                <h2>KaruFood</h2>
+                                <p>Application NextJS/typeScript de commande de restaurant partie client et partie admin.<br/>id:admin@karufoods.com  <br/> mdp: votre_mot_de_passe_admin</p>
+                            </div>
+                            <div class="techno-contenue">
+                                <div class="techno-oval"><span>NextJS</span></div>
+                                <div class="techno-oval"><span>TypeScript</span></div>
+                                <div class="techno-oval"><span>mongodb Atlas</span></div>
+                                <div class="techno-oval"><span>Vercel</span></div>
+                            </div>
+                            <div class="partie-lien">
+                                <div class="git-contenue">
+                                    <a href="https://github.com/clementR97/carte_restaurant" target="_blank" class="git-oval">
+                                        <span style="margin-right: 10px; margin-left: 20px;">Code</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://carte-restaurant.vercel.app" target="_blank" class="lien-oval">
+                                        <span style="margin-right: 10px; margin-left: 20px;">test</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M10 20a10 10 0 1 1 0-20a10 10 0 0 1 0 20m7.75-8a8 8 0 0 0 0-4h-3.82a29 29 0 0 1 0 4zm-.82 2h-3.22a14.4 14.4 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14m-8.85-2h3.84a24.6 24.6 0 0 0 0-4H8.08a24.6 24.6 0 0 0 0 4m.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4zm-6.08-2h3.82a29 29 0 0 1 0-4H2.25a8 8 0 0 0 0 4m.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6M3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6"/></svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <a href="https://carte-restaurant.vercel.app" target="_blank" class="lien-oval">
-                                <span style="margin-right: 10px; margin-left: 20px;">test</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M10 20a10 10 0 1 1 0-20a10 10 0 0 1 0 20m7.75-8a8 8 0 0 0 0-4h-3.82a29 29 0 0 1 0 4zm-.82 2h-3.22a14.4 14.4 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14m-8.85-2h3.84a24.6 24.6 0 0 0 0-4H8.08a24.6 24.6 0 0 0 0 4m.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4zm-6.08-2h3.82a29 29 0 0 1 0-4H2.25a8 8 0 0 0 0 4m.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6M3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6"/></svg>                            </a>
+                    </div>
+                    <!-- contenue2 -->
+                    <div class="contenue">
+                        <div class="image-contenue" id="img_karuzen"></div>
+                        <div class="contenue-overlay">
+                            <div class="text-contenue">
+                                <h2>Karuzen</h2>
+                                <p>Application de réservations des seances de sport et massages pour un client</p>
+                            </div>
+                            <div class="techno-contenue">
+                                <div class="techno-oval"><span>React</span></div>
+                                <div class="techno-oval"><span>Supabase</span></div>
+                                <div class="techno-oval"><span>API google</span></div>
+                            </div>
+                            <div class="partie-lien">
+                                <div>
+                                    <a href="https://www.karuzen-guadeloupe.fr" target="_blank" class="lien-oval">
+                                        <span style="margin-right: 10px; margin-left: 20px;">site </span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M10 20a10 10 0 1 1 0-20a10 10 0 0 1 0 20m7.75-8a8 8 0 0 0 0-4h-3.82a29 29 0 0 1 0 4zm-.82 2h-3.22a14.4 14.4 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14m-8.85-2h3.84a24.6 24.6 0 0 0 0-4H8.08a24.6 24.6 0 0 0 0 4m.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4zm-6.08-2h3.82a29 29 0 0 1 0-4H2.25a8 8 0 0 0 0 4m.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6M3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6"/></svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                 </div>
-            </div><!-- contenue2 -->
-            <div class="contenue">
-                <div class="image-contenue" id="img_karuzen"></div>
+                    </div>
+                    <!-- contenue3 -->
+                    <div class="contenue">
+                        <div class="image-contenue" id="img_eliteCute"></div>
+                        <div class="contenue-overlay">
+                            <div class="text-contenue">
+                                <h2>EliteCute</h2>
+                                <p>page de réservations chez un barber shop maquette</p>
+                            </div>
+                            <div class="techno-contenue">
+                                <div class="techno-oval"><span>React</span></div>
+                                <div class="techno-oval"><span>supabase</span></div>
+                            </div>
+                            <div class="partie-lien">
+                                <div>
+                                    <a href="https://barber-maquette.vercel.app" target="_blank" class="lien-oval">
+                                        <span style="margin-right: 10px; margin-left: 20px;">test </span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M10 20a10 10 0 1 1 0-20a10 10 0 0 1 0 20m7.75-8a8 8 0 0 0 0-4h-3.82a29 29 0 0 1 0 4zm-.82 2h-3.22a14.4 14.4 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14m-8.85-2h3.84a24.6 24.6 0 0 0 0-4H8.08a24.6 24.6 0 0 0 0 4m.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4zm-6.08-2h3.82a29 29 0 0 1 0-4H2.25a8 8 0 0 0 0 4m.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6M3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- contenue4 -->
 
-                <div class="text-contenue">
-                    <h2>Karuzen</h2>
-                    <p>Application de réservations des seances de sport et massages pour un client</p>
+                    <div class="contenue">
+                        <div class="image-contenue" id="img_e-commerce"></div>
+                        <div class="contenue-overlay">
+                            <div class="text-contenue">
+                                <h2>boutique en ligne de lunettes</h2>
+                                <p>Site e-commerce de vente de lunettes</p>
+                            </div>
+                            <div class="techno-contenue">
+                                <div class="techno-oval"><span>WordPress</span></div>
+                                <div class="techno-oval"><span>Elementor Pro</span></div>
+                                <div class="techno-oval"><span>WooCommerce</span></div>
+                                <div class="techno-oval"><span>Blocksy</span></div>
+                                <div class="techno-oval"><span>WPForms</span></div>
+                                <div class="techno-oval"><span>Stripe</span></div>
+                            </div>
+                            
+                        </div>
                 </div>
-                <div class="techno-contenue">
-                    <div class="techno-oval"><span>React</span></div>
-                    <div class="techno-oval"><span>Supabase</span></div>
-                    <div class="techno-oval"><span>API google</span></div>
+
+
+<!-- contenue 5 -->
+
+                    <div class="contenue">
+                        <div class="image-contenue" id="img_budgetTracker"></div>
+                        <div class="contenue-overlay">
+                            <div class="text-contenue">
+                                <h2>Budget_Tracker</h2>
+                                <p>Application MERN gestion de budget personnel, graphiques interactifs.<br/>id: clem@mail.com <br/> mdp: 1234azerty</p>
+                            </div>
+                            <div class="techno-contenue">
+                                <div class="techno-oval"><span>React</span></div>
+                                <div class="techno-oval"><span>nodeJs</span></div>
+                                <div class="techno-oval"><span>mongodb Atlas</span></div>
+                                <div class="techno-oval"><span>Vercel</span></div>
+                                <div class="techno-oval"><span>Railway</span></div>
+                            </div>
+                            <div class="partie-lien">
+                                <div class="git-contenue">
+                                    <a href="https://github.com/clementR97/Budget_Tracker" target="_blank" class="git-oval">
+                                        <span style="margin-right: 10px; margin-left: 20px;">Code</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://mon-budget-tracker-gold.vercel.app" target="_blank" class="lien-oval">
+                                        <span style="margin-right: 10px; margin-left: 20px;">test</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M10 20a10 10 0 1 1 0-20a10 10 0 0 1 0 20m7.75-8a8 8 0 0 0 0-4h-3.82a29 29 0 0 1 0 4zm-.82 2h-3.22a14.4 14.4 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14m-8.85-2h3.84a24.6 24.6 0 0 0 0-4H8.08a24.6 24.6 0 0 0 0 4m.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4zm-6.08-2h3.82a29 29 0 0 1 0-4H2.25a8 8 0 0 0 0 4m.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6M3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
-                </div>
                  
-                 <div class="partie-lien">
-                    
-                    <div>
-                        <a href="https://www.karuzen-guadeloupe.fr" target="_blank" class="lien-oval">
-                            <span style="margin-right: 10px; margin-left: 20px;">site </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M10 20a10 10 0 1 1 0-20a10 10 0 0 1 0 20m7.75-8a8 8 0 0 0 0-4h-3.82a29 29 0 0 1 0 4zm-.82 2h-3.22a14.4 14.4 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14m-8.85-2h3.84a24.6 24.6 0 0 0 0-4H8.08a24.6 24.6 0 0 0 0 4m.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4zm-6.08-2h3.82a29 29 0 0 1 0-4H2.25a8 8 0 0 0 0 4m.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6M3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6"/></svg>                            </a>
-                    </div>
-             </div>
             </div>
-
-            <!-- contenue3 -->
-            <div class="contenue">
-                <div class="image-contenue" id="img_eliteCute"></div>
-
-                <div class="text-contenue">
-                    <h2>EliteCute</h2>
-                    <p>page de réservations chez un barber shop maquette</p>
-                </div>
-                <div class="techno-contenue">
-                    <div class="techno-oval"><span>React</span></div>
-                    <div class="techno-oval"><span>supabase</span></div>
-                    
-                    
-                </div>
-                  <div class="partie-lien">
-                    <div>
-                        <a href="https://barber-maquette.vercel.app" target="_blank" class="lien-oval">
-                            <span style="margin-right: 10px; margin-left: 20px;">test </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M10 20a10 10 0 1 1 0-20a10 10 0 0 1 0 20m7.75-8a8 8 0 0 0 0-4h-3.82a29 29 0 0 1 0 4zm-.82 2h-3.22a14.4 14.4 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14m-8.85-2h3.84a24.6 24.6 0 0 0 0-4H8.08a24.6 24.6 0 0 0 0 4m.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4zm-6.08-2h3.82a29 29 0 0 1 0-4H2.25a8 8 0 0 0 0 4m.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6M3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6"/></svg>                            </a>
-                    </div>
-                </div>
-            </div>
-            <!-- contenue4 -->
-            <div class="contenue">
-                <div class="image-contenue" id="img_budgetTracker">
-                    
-                </div>
-
-                <div class="text-contenue">
-                    <h2>Budget_Tracker</h2>
-                    <p>Application MERN gestion de budget personnel, graphiques interactifs.<br/>id: clem@mail.com <br/> mdp: 1234azerty</p>
-                </div>
-                <div class="techno-contenue">
-                    <div class="techno-oval"><span>React</span></div>
-                    <div class="techno-oval"><span>nodeJs</span></div>
-                    <div class="techno-oval"><span>mongodb Atlas</span></div>
-                    <div class="techno-oval"><span>Vercel</span></div>
-                    <div class="techno-oval"><span>Railway</span></div>
-                </div>
-
-                  <div class="partie-lien">
-                        <div class="git-contenue">
-                            <a href="https://github.com/clementR97/Budget_Tracker" target="_blank" class="git-oval">
-                                <span style="margin-right: 10px; margin-left: 20px;">Code</span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                </svg>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://mon-budget-tracker-gold.vercel.app" target="_blank" class="lien-oval">
-                                <span style="margin-right: 10px; margin-left: 20px;">test</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M10 20a10 10 0 1 1 0-20a10 10 0 0 1 0 20m7.75-8a8 8 0 0 0 0-4h-3.82a29 29 0 0 1 0 4zm-.82 2h-3.22a14.4 14.4 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14m-8.85-2h3.84a24.6 24.6 0 0 0 0-4H8.08a24.6 24.6 0 0 0 0 4m.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4zm-6.08-2h3.82a29 29 0 0 1 0-4H2.25a8 8 0 0 0 0 4m.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6M3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6"/></svg>                            </a>
-                        </div>
-                 </div>
-            </div>
-
-            
-
-            <!-- contenue4 -->
-            
+            <button class="carousel-btn carousel-next" id="carousel-next" aria-label="Projet suivant">
+                <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+            </button>
+            <div id="carousel-dots"></div>
         </div>
     </div>
 <div id="contact">
@@ -445,6 +472,79 @@
                     console.log('Erreur lors de l\'envoi:', error);
                 });
         });
+
+        // Carousel projets - défilement vertical, 1 projet par slide
+        (function() {
+            const viewport = document.getElementById('vitrine-viewport');
+            const vitrine = document.getElementById('vitrine');
+            const prevBtn = document.getElementById('carousel-prev');
+            const nextBtn = document.getElementById('carousel-next');
+            const dotsContainer = document.getElementById('carousel-dots');
+            const cards = vitrine.querySelectorAll('.contenue');
+            let currentIndex = 0;
+
+            function getMaxIndex() {
+                return Math.max(0, cards.length - 1);
+            }
+
+            function buildDots() {
+                dotsContainer.innerHTML = '';
+                for (let i = 0; i < cards.length; i++) {
+                    const dot = document.createElement('button');
+                    dot.className = 'carousel-dot';
+                    dot.setAttribute('aria-label', 'Aller au projet ' + (i + 1));
+                    dot.addEventListener('click', () => goTo(i));
+                    dotsContainer.appendChild(dot);
+                }
+                updateDots();
+            }
+
+            function updateDots() {
+                const dots = dotsContainer.querySelectorAll('.carousel-dot');
+                dots.forEach((dot, idx) => {
+                    dot.classList.toggle('active', idx === currentIndex);
+                });
+            }
+
+            function updateCarousel() {
+                const slideHeight = viewport.offsetHeight;
+                vitrine.style.transform = `translateY(-${currentIndex * slideHeight}px)`;
+                updateDots();
+                prevBtn.disabled = currentIndex === 0;
+                nextBtn.disabled = currentIndex >= getMaxIndex();
+            }
+
+            function goTo(index) {
+                const maxIndex = getMaxIndex();
+                currentIndex = Math.max(0, Math.min(index, maxIndex));
+                updateCarousel();
+            }
+
+            prevBtn.addEventListener('click', () => goTo(currentIndex - 1));
+            nextBtn.addEventListener('click', () => goTo(currentIndex + 1));
+
+            // Swipe tactile vertical
+            let touchStartY = 0;
+            let touchEndY = 0;
+            viewport.addEventListener('touchstart', (e) => {
+                touchStartY = e.changedTouches[0].screenY;
+            }, { passive: true });
+            viewport.addEventListener('touchend', (e) => {
+                touchEndY = e.changedTouches[0].screenY;
+                const diff = touchStartY - touchEndY;
+                if (Math.abs(diff) > 50) {
+                    if (diff > 0) goTo(currentIndex + 1);
+                    else goTo(currentIndex - 1);
+                }
+            }, { passive: true });
+
+            window.addEventListener('resize', () => {
+                updateCarousel();
+            });
+
+            buildDots();
+            updateCarousel();
+        })();
 
         // Effet de scroll pour les cartes
         window.addEventListener('scroll', function() {
